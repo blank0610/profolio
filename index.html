@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Paul Hon – Computer Science Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Paul Hon – Year 2 Computer Science student. Projects: NHS Service Finder, Cookbook Website with Firebase, Arduino Robotic Arm." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+    <header>
+      <nav class="nav">
+        <div class="nav-left">
+          <div>
+            <div class="nav-title-main">Paul Hon</div>
+            <div class="nav-title-sub">Year 2 Computer Science Student</div>
+          </div>
+        </div>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO / ABOUT -->
+      <section class="section" id="about">
+        <div class="hero-wrapper">
+          <div class="hero-intro">
+            <div class="hero-badge">
+              <span class="hero-badge-dot"></span>
+              <span>Open to placements &amp; internships</span>
+            </div>
+            <h1 class="hero-name">
+              Hi, I'm <span>Paul Hon</span>,<br />
+              a Year 2 Computer Science student.
+            </h1>
+            <p class="hero-tagline">
+              Ambitious and dedicated with experience in
+              <span class="hero-highlight">C#, Java, Python, HTML, CSS, JavaScript and SQL</span>.
+              I enjoy turning ideas into real applications – from a
+              <span class="hero-highlight">C# WPF NHS services finder</span> to a
+              <span class="hero-highlight">Firebase-powered cookbook website</span> and an
+              <span class="hero-highlight">Arduino robotic arm</span>. Holding a British National (Overseas) visa,
+              I have unrestricted rights to live and work in the UK and I’m keen to grow as a software engineer.
+            </p>
+            <div class="hero-meta">
+              <span>BSc Computer Science (with Foundation Year)</span>
+              <span>Bangor University</span>
+            </div>
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">
+                <span>View my projects</span>
+                <span class="icon">⤵</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section class="section" id="projects">
+        <div class="section-header">
+          <h2 class="section-title">Projects</h2>
+          <div class="section-pill">What I’ve built</div>
+        </div>
+
+        <div class="projects-grid">
+          <!-- NHS Service Finder -->
+          <article class="card card-flip">
+            <div class="card-inner">
+              <!-- FRONT -->
+              <div class="card-front">
+                <div class="card-header">
+                  <h3 class="card-title">NHS Service Finder</h3>
+                  <span class="card-tag">C# • WPF • MySQL</span>
+                </div>
+                <div class="card-body">
+                  Full-stack WPF application for locating nearby NHS-related services such as GP clinics,
+                  schools, dentists, and opticians.
+                  <ul class="card-highlights">
+                    <li><span>•</span><span>Implemented postcode-based distance calculation using the Haversine formula.</span></li>
+                    <li><span>•</span><span>Integrated MySQL to store live service data and postcode coordinates.</span></li>
+                    <li><span>•</span><span>Built a searchable interface with filters by category and postcode.</span></li>
+                    <li><span>•</span><span>Created an admin dashboard to add, edit and delete services directly in the database.</span></li>
+                  </ul>
+                  <div class="chip-row">
+                    <span class="chip">C#</span>
+                    <span class="chip">WPF (.NET)</span>
+                    <span class="chip">MySQL</span>
+                    <span class="chip">MVVM concepts</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="card-buttons">
+                    <!-- FLIP TO BACK -->
+                    <button
+                      class="card-btn"
+                      data-flip="show"
+                    >
+                      <span class="icon">🖼️</span>
+                      <span>Show preview</span>
+                    </button>
+
+                    <!-- GITHUB BUTTON -->
+                    <a
+                      class="card-btn card-btn-primary"
+                      href="https://github.com/blank0610/NHS"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      <span class="icon">🐙</span>
+                      <span>View on GitHub</span>
+                    </a>
+                  </div>
+                  <div class="card-meta">Oct 2025 – Dec 2025</div>
+                </div>
+              </div>
+
+              <!-- BACK (IMAGE) -->
+              <div class="card-back">
+                <div>
+                  <div class="card-header">
+                    <h3 class="card-title">NHS Service Finder</h3>
+                    <span class="card-tag">Preview</span>
+                  </div>
+                  <div class="card-back-image-wrapper">
+                    <!-- Make sure this file exists: images/nhs-service-finder.png -->
+                    <img src="images/nhs-service-finder.png" alt="NHS Service Finder screenshot">
+                  </div>
+                  <p class="card-back-caption">
+                    Example view of the results list showing nearby services for a given postcode.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <div class="card-buttons">
+                    <button
+                      class="card-btn"
+                      data-flip="hide"
+                    >
+                      <span class="icon">↩</span>
+                      <span>Back to details</span>
+                    </button>
+                    <a
+                      class="card-btn card-btn-primary"
+                      href="https://github.com/blank0610/NHS"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      <span class="icon">🐙</span>
+                      <span>View on GitHub</span>
+                    </a>
+                  </div>
+                  <div class="card-meta">C# • WPF • MySQL</div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Cookbook Website -->
+          <article class="card card-flip">
+            <div class="card-inner">
+              <!-- FRONT -->
+              <div class="card-front">
+                <div class="card-header">
+                  <h3 class="card-title">Cookbook Website</h3>
+                  <span class="card-tag">Web • Firebase</span>
+                </div>
+                <div class="card-body">
+                  Personal cookbook website to showcase recipes and cooking tips with user accounts and
+                  cloud data storage.
+                  <ul class="card-highlights">
+                    <li><span>•</span><span>Designed and implemented the site using HTML, CSS and JavaScript.</span></li>
+                    <li><span>•</span><span>Used Firebase for authentication, recipe submission and persistent data storage.</span></li>
+                    <li><span>•</span><span>Implemented search functionality so users can quickly find recipes.</span></li>
+                    <li><span>•</span><span>Built a recipe submission form to allow users to contribute their own dishes.</span></li>
+                  </ul>
+                  <div class="chip-row">
+                    <span class="chip">HTML</span>
+                    <span class="chip">CSS</span>
+                    <span class="chip">JavaScript</span>
+                    <span class="chip">Firebase</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="card-buttons">
+                    <!-- FLIP TO BACK -->
+                    <button
+                      class="card-btn"
+                      data-flip="show"
+                    >
+                      <span class="icon">🖼️</span>
+                      <span>Show preview</span>
+                    </button>
+
+                    <!-- GITHUB & LIVE -->
+                    <a
+                      class="card-btn card-btn-primary"
+                      href="https://github.com/blank0610/menu3"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      <span class="icon">🐙</span>
+                      <span>View on GitHub</span>
+                    </a>
+
+                    <a
+                      class="card-btn card-btn-primary"
+                      href="https://blank0610.github.io/menu3/index.html"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      <span class="icon">🌐</span>
+                      <span>View live site</span>
+                    </a>
+                  </div>
+                  <div class="card-meta">Feb 2025 – Jun 2025</div>
+                </div>
+              </div>
+
+              <!-- BACK (IMAGE) -->
+              <div class="card-back">
+                <div>
+                  <div class="card-header">
+                    <h3 class="card-title">Cookbook Website</h3>
+                    <span class="card-tag">Preview</span>
+                  </div>
+                  <div class="card-back-image-wrapper">
+                    <!-- Make sure this file exists: images/cookbook-website.png -->
+                    <img src="images/cookbook-website.png" alt="Cookbook website screenshot">
+                  </div>
+                  <p class="card-back-caption">
+                    Home page of the cookbook website showing featured recipes and navigation.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <div class="card-buttons">
+                    <button
+                      class="card-btn"
+                      data-flip="hide"
+                    >
+                      <span class="icon">↩</span>
+                      <span>Back to details</span>
+                    </button>
+                    <a
+                      class="card-btn card-btn-primary"
+                      href="https://blank0610.github.io/menu3/index.html"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      <span class="icon">🌐</span>
+                      <span>View live site</span>
+                    </a>
+                  </div>
+                  <div class="card-meta">HTML • CSS • JS • Firebase</div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Robotic Arm -->
+          <article class="card card-flip">
+            <div class="card-inner">
+              <!-- FRONT -->
+              <div class="card-front">
+                <div class="card-header">
+                  <h3 class="card-title">Robotic Arm Based on Arduino</h3>
+                  <span class="card-tag">Embedded / Hardware</span>
+                </div>
+                <div class="card-body">
+                  Robotic arm prototype integrating sensors and servo motors, programmed using Arduino C.
+                  <ul class="card-highlights">
+                    <li><span>•</span><span>Designed the arm mechanics and used multiple servo motors for precise movement.</span></li>
+                    <li><span>•</span><span>Developed control logic to map sensor input to smooth joint motion.</span></li>
+                    <li><span>•</span><span>Gained hands-on experience in hardware integration and embedded programming.</span></li>
+                  </ul>
+                  <div class="chip-row">
+                    <span class="chip">Arduino Uno</span>
+                    <span class="chip">C / C++</span>
+                    <span class="chip">Servo motors</span>
+                    <span class="chip">Hardware integration</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="card-buttons">
+                    <!-- FLIP TO BACK -->
+                    <button
+                      class="card-btn"
+                      data-flip="show"
+                    >
+                      <span class="icon">🖼️</span>
+                      <span>Show preview</span>
+                    </button>
+
+                    <!-- GITHUB BUTTON -->
+                    <a
+                      class="card-btn card-btn-primary"
+                      href="https://github.com/blank0610/arduino-arm"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      <span class="icon">🐙</span>
+                      <span>View on GitHub</span>
+                    </a>
+                  </div>
+                  <div class="card-meta">Oct 2024 – Dec 2024</div>
+                </div>
+              </div>
+
+              <!-- BACK (IMAGE) -->
+              <div class="card-back">
+                <div>
+                  <div class="card-header">
+                    <h3 class="card-title">Robotic Arm Based on Arduino</h3>
+                    <span class="card-tag">Preview</span>
+                  </div>
+                  <div class="card-back-image-wrapper">
+                    <!-- Make sure this file exists: images/arduino-robotic-arm.png -->
+                    <img src="images/arduino-robotic-arm.png" alt="Arduino robotic arm photo">
+                  </div>
+                  <p class="card-back-caption">
+                    Photo of the 3D-printed robotic arm prototype connected to the Arduino board.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <div class="card-buttons">
+                    <button
+                      class="card-btn"
+                      data-flip="hide"
+                    >
+                      <span class="icon">↩</span>
+                      <span>Back to details</span>
+                    </button>
+                    <a
+                      class="card-btn card-btn-primary"
+                      href="https://github.com/blank0610/arduino-arm"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      <span class="icon">🐙</span>
+                      <span>View on GitHub</span>
+                    </a>
+                  </div>
+                  <div class="card-meta">Arduino • C/C++ • Hardware</div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="section" id="skills">
+        <div class="section-header">
+          <h2 class="section-title">Skills</h2>
+          <div class="section-pill">Technical &amp; tools</div>
+        </div>
+
+        <div class="skills-grid">
+          <div>
+            <div class="skills-group-title">Programming</div>
+            <div class="skills-list">
+              <span>C#</span>
+              <span>Java</span>
+              <span>Python</span>
+              <span>JavaScript</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>SQL</span>
+              <span>XAML</span>
+            </div>
+          </div>
+          <div>
+            <div class="skills-group-title">Platforms &amp; Tools</div>
+            <div class="skills-list">
+              <span>Firebase</span>
+              <span>MySQL</span>
+              <span>Visual Studio</span>
+              <span>VS Code</span>
+              <span>Oracle VM VirtualBox</span>
+              <span>Synology NAS</span>
+              <span>OBS Studio</span>
+            </div>
+          </div>
+          <div>
+            <div class="skills-group-title">Other Software</div>
+            <div class="skills-list">
+              <span>Microsoft Office (Word, PowerPoint, Excel, Outlook, Teams)</span>
+              <span>Zoom</span>
+              <span>Canva</span>
+              <span>Autodesk Fusion</span>
+              <span>Techsoft Design V3</span>
+              <span>Blender</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section class="section" id="experience">
+        <div class="section-header">
+          <h2 class="section-title">Experience</h2>
+          <div class="section-pill">Industry exposure</div>
+        </div>
+
+        <div class="two-column">
+          <article class="card">
+            <div class="card-inner">
+              <div class="card-front" style="position:relative;inset:auto;backface-visibility:visible;transform:none;padding:18px 16px 14px;height:auto;">
+                <div class="card-header">
+                  <h3 class="card-title">3D Modelling &amp; UX Design Placement Student</h3>
+                  <span class="card-tag">Jul 2025 – Aug 2025</span>
+                </div>
+                <p class="card-subtitle">Hong Kong Internet &amp; E-Commerce Association</p>
+                <div class="card-body">
+                  <strong>AR Prototype and 3D Modelling</strong>
+                  <ul class="card-highlights">
+                    <li><span>•</span><span>Helped create 3D models for AR demonstrations, preparing assets for real-time performance.</span></li>
+                    <li><span>•</span><span>Ensured models met polygon and texture requirements.</span></li>
+                    <li><span>•</span><span>Assisted in integrating assets into interactive AR prototypes using the team’s toolchains.</span></li>
+                  </ul>
+                  <strong>UX Research for AI Chatbot Prototype</strong>
+                  <ul class="card-highlights">
+                    <li><span>•</span><span>Supported the development of an AI chatbot prototype by mapping user needs.</span></li>
+                    <li><span>•</span><span>Reviewed conversation flows and gathered user feedback.</span></li>
+                    <li><span>•</span><span>Helped refine interactions to improve clarity and overall usability.</span></li>
+                  </ul>
+                  <div class="tagline-row">
+                    <span>AR / 3D Modelling</span>
+                    <span>UX Research</span>
+                    <span>Prototyping</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-inner">
+              <div class="card-front" style="position:relative;inset:auto;backface-visibility:visible;transform:none;padding:18px 16px 14px;height:auto;">
+                <div class="card-header">
+                  <h3 class="card-title">Additional Information</h3>
+                  <span class="card-tag">Languages &amp; eligibility</span>
+                </div>
+                <div class="card-body">
+                  <strong>Languages</strong>
+                  <ul class="card-highlights">
+                    <li><span>•</span><span>Fluent in spoken and written English.</span></li>
+                    <li><span>•</span><span>Native in Cantonese and Mandarin.</span></li>
+                  </ul>
+                  <strong>Right to work</strong>
+                  <ul class="card-highlights">
+                    <li><span>•</span><span>British National (Overseas) visa with unrestricted rights to live and work in the UK.</span></li>
+                  </ul>
+                  <strong>Professional Membership &amp; Certificates</strong>
+                  <ul class="card-highlights">
+                    <li><span>•</span><span>Student Member – The Institution of Engineering and Technology (Oct 2024).</span></li>
+                    <li><span>•</span><span>IELTS Overall Band 5.5 – CEFR Level B2 (Dec 2023).</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- EDUCATION -->
+      <section class="section" id="education">
+        <div class="section-header">
+          <h2 class="section-title">Education</h2>
+          <div class="section-pill">Academic background</div>
+        </div>
+
+        <div class="two-column">
+          <article class="card">
+            <div class="card-inner">
+              <div class="card-front" style="position:relative;inset:auto;backface-visibility:visible;transform:none;padding:18px 16px 14px;height:auto;">
+                <div class="card-header">
+                  <h3 class="card-title">BSc Computer Science (with Foundation Year)</h3>
+                  <span class="card-tag">Jan 2024 – Present</span>
+                </div>
+                <p class="card-subtitle">Bangor University</p>
+                <div class="card-body">
+                  <p>
+                    Studying core computer science topics including programming, software development
+                    and problem-solving, while building a strong mathematical and analytical foundation.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-inner">
+              <div class="card-front" style="position:relative;inset:auto;backface-visibility:visible;transform:none;padding:18px 16px 14px;height:auto;">
+                <div class="card-header">
+                  <h3 class="card-title">Pre-University Studies</h3>
+                </div>
+                <div class="card-body">
+                  <p><strong>St Davids College</strong> – AS Level (Aug 2022 – Jul 2023)</p>
+                  <ul class="card-highlights">
+                    <li><span>•</span><span>Maths, Physics, Design &amp; Technology.</span></li>
+                  </ul>
+                  <p style="margin-top:8px;"><strong>GCSE / IGCSE</strong> (Aug 2021 – Jul 2022)</p>
+                  <ul class="card-highlights">
+                    <li><span>•</span><span>6 A–C including Maths, Additional Maths &amp; Double Science.</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="section" id="contact">
+        <div class="section-header">
+          <h2 class="section-title">Contact</h2>
+          <div class="section-pill">Let’s talk</div>
+        </div>
+
+        <div class="contact-card">
+          <div>
+            <p>
+              I’m looking for a placement or internship where I can apply my technical skills,
+              contribute to real projects, and keep growing as a software engineer. If my profile
+              matches what you’re looking for, please get in touch:
+            </p>
+            <div class="contact-list">
+              <a href="mailto:Phon04aug@gmail.com">
+                <span class="icon">✉️</span>
+                <span>Phon04aug@gmail.com</span>
+              </a>
+              <a href="tel:07864144138">
+                <span class="icon">📱</span>
+                <span>07864144138</span>
+              </a>
+              <a href="#">
+                <span class="icon">🐙</span>
+                <span>https://github.com/blank0610</span>
+              </a>
+            </div>
+            <p class="contact-note">
+              I’m happy to share code samples, project reports, or walk through any of the applications above.
+            </p>
+          </div>
+          <div>
+            <p><strong>Quick links</strong></p>
+            <div class="contact-list">
+              <a href="#projects"><span class="icon">🧩</span><span>Skip to projects</span></a>
+              <a href="#skills"><span class="icon">🛠️</span><span>View skills</span></a>
+              <a href="#experience"><span class="icon">📌</span><span>See experience</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      © <span id="year"></span> Paul Hon. Built with HTML &amp; CSS.
+    </footer>
+  </div>
+
+  <!-- IMAGE MODAL (FULLSCREEN PREVIEW) -->
+  <div id="image-modal" class="image-modal-overlay">
+    <img id="image-modal-img" class="image-modal-image" alt="Project preview image">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
